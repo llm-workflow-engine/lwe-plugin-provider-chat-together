@@ -39,10 +39,6 @@ class ProviderChatTogether(Provider):
     Access to Together chat models via the OpenAI API
     """
 
-    def __init__(self, config=None):
-        super().__init__(config)
-        self.models = self.config.get('plugins.provider_chat_together.models') or self.fetch_models()
-
     def fetch_models(self):
         models_url = f"{TOGETHER_API_BASE}/models"
         try:
