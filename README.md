@@ -1,4 +1,4 @@
-# LLM Workflow Engine (LWE) OpenRouter Provider plugin
+# LLM Workflow Engine (LWE) Chat Together Provider plugin
 
 Chat Together Provider plugin for [LLM Workflow Engine](https://github.com/llm-workflow-engine/llm-workflow-engine)
 
