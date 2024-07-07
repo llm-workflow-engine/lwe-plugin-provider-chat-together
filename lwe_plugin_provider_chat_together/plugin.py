@@ -62,7 +62,6 @@ class ProviderChatTogether(Provider):
         return {
             "chat": True,
             'validate_models': False,
-            "models": self.models,
         }
 
     @property
