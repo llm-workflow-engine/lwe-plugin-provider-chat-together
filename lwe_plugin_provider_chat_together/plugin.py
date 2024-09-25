@@ -3,7 +3,7 @@ from typing import Optional
 import requests
 
 from langchain_openai import ChatOpenAI
-from langchain_core.pydantic_v1 import Field
+from pydantic import Field
 
 from lwe.core.provider import Provider, PresetValue
 
