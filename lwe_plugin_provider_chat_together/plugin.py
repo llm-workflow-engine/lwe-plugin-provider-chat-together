@@ -52,7 +52,7 @@ class ProviderChatTogether(Provider):
             models_list = response.json()
             if not models_list:
                 raise ValueError('Could not retrieve models')
-            models = {model['id']: {'max_tokens': model['context_length']} for model in models_list if model['type'] == 'chat'}
+            models = {model['id']: {'max_tokens': model['context_length']} for model in models_list if model['type'] == 'chat' and 'context_length' in model}
             return models
         except requests.exceptions.RequestException as e:
             raise ValueError(f"Could not retrieve models: {e}")
